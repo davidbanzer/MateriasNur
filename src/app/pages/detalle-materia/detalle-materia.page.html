@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{materia.nombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Docente:</ion-label>
+    <ion-label>{{materia.docente}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-button expand="full" (click)="inscribirMateria(materia.materia_id)">
+      Inscribir
+    </ion-button>
+  </ion-item>
+</ion-content>

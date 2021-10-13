@@ -1,5 +1,7 @@
 {
   "name": "Materias",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

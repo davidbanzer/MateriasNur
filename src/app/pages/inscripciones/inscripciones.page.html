@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Mis Inscripciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-list>
+    <ion-item *ngFor="let inscripcion of listaInscripciones">
+      <ion-label>{{inscripcion.nombre}}</ion-label>
+    </ion-item>
+  </ion-list>
+  -->
+  <ion-list>
+    <ion-item-sliding *ngFor="let inscripcion of listaInscripciones">
+      <ion-item>{{inscripcion.nombre}}</ion-item>
+      <ion-item-options side="end" color="danger">
+        <ion-item-option color="danger" (click)="eliminarInscripcion(inscripcion.inscripcion_id)">
+          Eliminar
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  <app-fab></app-fab>
+</ion-content>

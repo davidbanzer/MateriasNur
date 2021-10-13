@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Materias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let materia of listaMaterias" (click)="irDetalle(materia.materia_id)">
+    <ion-label>{{materia.nombre}}</ion-label>
+  </ion-item>
+</ion-list>
+<app-fab></app-fab>
+
+</ion-content>
